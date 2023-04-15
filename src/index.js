@@ -16,5 +16,7 @@
  */
 import refs from './js/refs'
 import { formSubmit } from './js/formSubmit'
+import { renderNotes } from './js/renderNotes';
 
 refs.form.addEventListener('submit', formSubmit);
+renderNotes();
