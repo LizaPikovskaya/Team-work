@@ -1,0 +1,2 @@
+!function(){var t={form:document.querySelector("#task-form"),list:document.querySelector("#task-list")},e="notes-data";var r={addNote:function(t){var r=JSON.parse(localStorage.getItem(e))||[];r.push(t),localStorage.setItem(e,JSON.stringify(r))}};function a(t){var e={id:Date.now()};return new FormData(t.currentTarget).forEach((function(t,r){e[r]=t})),e}t.form.addEventListener("submit",(function(t){t.preventDefault(),r.addNote(a(t))}))}();
+//# sourceMappingURL=index.6a5b9ec1.js.map
